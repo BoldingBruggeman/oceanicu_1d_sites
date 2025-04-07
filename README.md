@@ -3,6 +3,8 @@
 The repository contains all information to create working configurations for the stations give as folders in the repository. This information contains the environmental forcing like initial conditions for salinity and temperature, time varying surface forcing from ERA5 and a selection of bio-geochemical models to chose from.
 In total there is M=12 station and N=7 biogechemical models - normally requirering 84 different setups to cover them all. As the format of a FABM yaml configuration file is independent of the driver model setup - i.e. it can be used for both 1D and 3D setups without modifications - a given FABM yaml file can be reused without modifications. The site specific configuration is done by the driver model - in this case GOTM - and it requires snippets of YAML text to be changed between different bio-geochemical simulations. The benefit is that the 84 configurations has been reduced to 12 (stations) + 7 (FABM yaml files) + 7 (GOTM yaml snippets) = 26.
 
+April 7th 5 new deep mining stations has been added so the number of stations is now 17.
+
 The basic configurations have been downloaded from iGOTM (igotm.bolding-bruggeman.com) based on a list of stations defined in OceanICU WP6.
 The FABM yaml files for the individual bio-geochemical models are obtained from the repositories of the different models and stored in the folder fabm-yaml.
 

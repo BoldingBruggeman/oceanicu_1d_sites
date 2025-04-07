@@ -27,7 +27,6 @@ def merge_gotm_yaml(site, model):
     if not os.path.exists(f"{f1}.org"):
         shutil.copy(f1, f"{f1}.org")
 
-    #    shutil.copy(f1, f2)
     # Write the updated data back to the original file
     with open(f1, "w") as file:
         yaml.dump(original_data, file)
